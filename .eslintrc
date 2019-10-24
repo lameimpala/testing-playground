@@ -1,0 +1,34 @@
+{
+    "extends": [
+        "standard",
+        "plugin:react/recommended",
+        "prettier", 
+        "prettier/react",
+        "prettier/standard"
+    ],
+    "plugins": ["react", "prettier"],
+    "env": {
+        "jest": true
+    },
+    "settings": {
+        "react": {
+            "pragma": "React",
+            "version": "detect"
+        }
+    },
+    "rules" : {
+        "indent": ["warn", 4, { "SwitchCase": 1 }],
+        "semi": ["error", "always"],
+        "semi-spacing": ["warn", { "before": false, "after": true }],
+        "quotes": ["warn", "single", { "avoidEscape": true }],
+        "space-before-function-paren": ["warn", { "anonymous": "never", "named": "never" }],
+        "object-curly-spacing": ["warn", "always"]
+    },
+    "parserOptions": {
+        "ecmaVersion": 6,
+        "sourceType": "module",
+        "ecmaFeatures": {
+            "jsx": true
+        }
+    }
+}
