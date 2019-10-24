@@ -12,4 +12,16 @@ describe('isDivisibleBy5', () => {
         // assert
         expect(actualResult).toEqual(expectedResult);
     });
+
+    it('returns false if a number is not divisible by 5', () => {
+        // arrange
+        const expectedResult = false;
+        const valueUnderTest = 51;
+
+        // act
+        const actualResult = isDivisibleBy5(valueUnderTest);
+
+        // assert
+        expect(actualResult).toEqual(expectedResult);
+    });
 });
