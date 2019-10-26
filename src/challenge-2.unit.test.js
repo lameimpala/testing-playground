@@ -1,3 +1,7 @@
+/**
+ * Unit Test: Challenge-2.js
+ * 
+ */
 import { lastItemOf } from './challenge-2';
 
 describe('lastItemOf', () => {

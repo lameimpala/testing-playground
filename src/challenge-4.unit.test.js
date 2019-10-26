@@ -1,3 +1,7 @@
+/**
+ * Unit Test: Challenge-4.js
+ * 
+ */
 import { reverseCase } from './challenge-4';
 
 describe('reverseCase', () => {
@@ -28,7 +32,7 @@ describe('reverseCase', () => {
         const expectedResult = 'PIGGLY WIGGLY';
 
         // act
-        const actualResult = reverseCase('piggly wiggle');
+        const actualResult = reverseCase('piggly wiggly');
         
         // assert
         expect(actualResult).toEqual(expectedResult);

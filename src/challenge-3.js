@@ -1,3 +1,16 @@
+/*************************
+    *** Coding Challenge 3
+    *      
+    *   Given a number, create a function that tests if the 
+    *   number is divisible by 5 and return true or false.
+    *
+****/
 export function isDivisibleBy5(number) {
-    throw new Error('Not Implemented');
+    var divisible = number / 5;
+    
+    if(divisible == divisible.toFixed(0)){
+        return true;
+    }else {
+        return false;
+    }
 }
