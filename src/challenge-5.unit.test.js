@@ -1,17 +1,39 @@
 /**
- * Unit Test: Challenge-1.js
+ * Unit Test: Challenge-5.js
  * 
  */
-import { sumOf } from './challenge-1';
+import { encrypt } from './challenge-5';
 
-describe('sumOf', () => {
-    it('adds 2 numbers together', () => {
+describe('encrypt', () => {
+    it('Encrypts a string', () => {
         // arrange
-        const expectedResult = 5;
+        const expectedResult = 'ypp0haca';
 
         // act
-        const actualResult = sumOf(3, 2);
+        const actualResult = encrypt('happy');
 
+        // assert
+        expect(actualResult).toEqual(expectedResult);
+    });
+});
+
+describe('encrypt', () => {
+    it('Encrypts a string that contains double vowels', () => {
+        // arrange
+        const expectedResult = '11rt1nipaca';
+        // act
+        const actualResult = encrypt('pinetree');
+        // assert
+        expect(actualResult).toEqual(expectedResult);
+    });
+});
+
+describe('encrypt', () => {
+    it('Encrypts a string that contains consecutive vowels', () => {
+        // arrange
+        const expectedResult = '13lbaca';
+        // act
+        const actualResult = encrypt('blue');
         // assert
         expect(actualResult).toEqual(expectedResult);
     });
