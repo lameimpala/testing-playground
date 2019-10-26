@@ -25,45 +25,20 @@
     *       All lower-cased letters should be upper-cased, and vice versa.
     * 
 ****/
-var a = 'a';
 
+export function encrypt(string) {
+    
+    let reversedString = string.split('').reverse().join('');
+        
+    reversedString = reversedString.replace(/a/g, '0').replace(/e/g, '1').replace(/o/g, '2').replace(/u/g, '3');
 
-function encrypt(string) {
-    var container = [];
-    for(var j = 0; j < string.length; j++){
-        container = string.split('').reverse().join('');        
-    }
-    
-    for(var i = 0; i < string.length; i++){
-        switch(container[i]){
-            case a:
-                var temp = container.pop();
-                container = temp.push(0);
-                // container.splice(i, 2, '0'); // combine here
-                    
-                break;
-            /* case 'e':
-                container = string.split('').reverse().splice(i, 1, '0').join('');
-                // container.splice(i, 1, '1');                
-                break;
-            case 'o':
-                container = string.split('').reverse().splice(i, 1, '0').join('');
-                // container.splice(i, 1, '2');                
-                break;
-            case 'u':
-                container = string.split('').reverse().splice(i, 1, '0').join('');
-                // container.splice(i, 1, '3');               
-                break; */
-        }
-        //  }
-    
-    }   
-    
-
-    return container;
+    reversedString = reversedString + 'aca';
+        
+    return reversedString;
     
 }
 
-var arrEncrypt = [];
-arrEncrypt = encrypt('apple');
-console.log(arrEncrypt);
+console.log(encrypt('apple'));
+console.log(encrypt('karaca'));
+console.log(encrypt('burak'));
+console.log(encrypt('alpaca'));
