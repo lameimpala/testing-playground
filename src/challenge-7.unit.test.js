@@ -1,3 +1,7 @@
+/**
+ * Unit Test: Challenge-7.js
+ * 
+ */
 import { addUp } from './challenge-7';
 
 describe('addUp', () => {
