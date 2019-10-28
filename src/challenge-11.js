@@ -5,6 +5,13 @@ Challenge:
     This function will return true if the given string matches any key within the object, and return false otherwise.
     The objects may be nested, so you will need to *recurse* over the object keys in order to dive deep down into the object
 
+    Steps:
+        1. Get the keys of the input object using Object.keys()
+        2. Iterate over those keys
+        3. If a key equals the input string, return true
+        4. If a key's *value* points to an object, repeat steps 1-4 on that object
+        5. Otherwise, return false
+
 Examples:
 
     objectHasKey({ a: 1}, 'a') = true because the 'a' key exists in the object
