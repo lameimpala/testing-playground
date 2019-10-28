@@ -10,5 +10,5 @@
 */
 
 export function pythagoreanTheorem(a, b) {
-    throw new Error('Not Implemented');
+    return Math.sqrt(Math.pow(a, 2) + Math.pow(b, 2));
 }

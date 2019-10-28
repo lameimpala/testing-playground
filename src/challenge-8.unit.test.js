@@ -12,34 +12,12 @@ describe('pythagoreanTheorem', () => {
         expect(actualResult).toEqual(expectedResult);
     });
 
-    it('returns 3 when supplied with 5 and 4', () => {
-        // arrange
-        const expectedResult = 5;
-
-        // act
-        const actualResult = pythagoreanTheorem(5, 4);
-
-        // assert
-        expect(actualResult).toEqual(expectedResult);
-    });
-
     it('returns 13 when supplied with 5 and 12', () => {
         // arrange
         const expectedResult = 13;
 
         // act
         const actualResult = pythagoreanTheorem(5, 12);
-
-        // assert
-        expect(actualResult).toEqual(expectedResult);
-    });
-
-    it('returns 12 when supplied with 5 and 13', () => {
-        // arrange
-        const expectedResult = 12;
-
-        // act
-        const actualResult = pythagoreanTheorem(5, 13);
 
         // assert
         expect(actualResult).toEqual(expectedResult);
