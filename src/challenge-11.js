@@ -23,6 +23,14 @@ Examples:
 
 */
 
-export function objectHasKey(inputObject, keyToFind) {
-
+export function objectHasKey(inputObject = {}, keyToFind = '') {
+    return Object.entries(inputObject).reduce(function(hasKey, [key, value]){
+        if (typeof value === 'object') {
+            return objectHasKey(value, keyToFind);
+        }
+        else if (key === keyToFind) {
+            return true;
+        }
+        return hasKey;
+    }, false);
 }

@@ -1,5 +1,5 @@
 /*************************
-    *** Coding Challenge 13
+    *** Coding Challenge 14
 
         Write a react function component called "Button" that accepts the prop "onClick"
             which is a function.
