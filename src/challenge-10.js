@@ -1,15 +1,16 @@
 /*
-Challenege:
-    Create a function that returns the total number of parameters passed in.
+    *** Challenge 10
 
-Examples:
-    numberOfArgs("a", "b", "c") ➞ 3
+    Create a function that returns the count of the parameters passed in.
 
-    numberOfArgs(10, 20, 30, 40, 50) ➞ 5
+    Examples:
+        numberOfArgs("a", "b", "c") returns 3
 
-    numberOfArgs(x, y) ➞ 2
+        numberOfArgs(10, 20, 30, 40, 50) returns 5
 
-    numberOfArgs() ➞ 0
+        numberOfArgs(x, y) returns 2
+
+        numberOfArgs() returns 0
 */
 
 export function numberOfArgs() {

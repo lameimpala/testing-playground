@@ -66,15 +66,4 @@ describe('sumOfArgs', () => {
         // assert
         expect(actualResult).toEqual(expectedResult);
     });
-
-    it('uses the reduce method', () => {
-        // arrange
-        const expectedResult = 'reduce';
-
-        // act
-        const actualResult = sumOfArgs.toString();
-                
-        // assert
-        expect(actualResult.includes(expectedResult)).toBeTruthy();
-    });
 });

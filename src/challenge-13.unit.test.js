@@ -7,8 +7,8 @@ import '@testing-library/jest-dom/extend-expect';
 // Component we're testing
 import { Name } from './challenge-13';
 
-describe('Name Component', () => {
-    it('should render Reid', () => {
+describe('The Name Component', () => {
+    it('should show Reid', () => {
         // arrange
         const name = 'Reid';
 
@@ -19,7 +19,7 @@ describe('Name Component', () => {
         expect(queryByText(name)).toBeInTheDocument();
     });
 
-    it('should render Tim', () => {
+    it('should show Tim', () => {
         // arrange
         const name = 'Tim';
 
@@ -31,7 +31,7 @@ describe('Name Component', () => {
     });
 
 
-    it('should render "No name specified" when there is no name', () => {
+    it('should show "No name specified" when there is no name', () => {
         // arrange
         // act
         const { queryByText } = render(<Name />);

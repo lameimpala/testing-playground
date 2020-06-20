@@ -2,15 +2,15 @@
  * Unit Test: Challenge-7.js
  * 
  */
-import { addUp } from './challenge-7';
+import { addUpTo } from './challenge-7';
 
-describe('addUp', () => {
+describe('addUpTo', () => {
     it('adds the numbers 0 up to 6', () => {
         // arrange 
         const expectedResult = 21;
 
         // act
-        const actualResult = addUp(6);
+        const actualResult = addUpTo(6);
 
         // assert
         expect(actualResult).toEqual(expectedResult);
@@ -21,7 +21,7 @@ describe('addUp', () => {
         const expectedResult = 15;
 
         // act
-        const actualResult = addUp(5);
+        const actualResult = addUpTo(5);
 
         // assert
         expect(actualResult).toEqual(expectedResult);
@@ -32,7 +32,7 @@ describe('addUp', () => {
         const expectedResult = 10;
 
         // act
-        const actualResult = addUp(4);
+        const actualResult = addUpTo(4);
 
         // assert
         expect(actualResult).toEqual(expectedResult);
@@ -43,7 +43,7 @@ describe('addUp', () => {
         const expectedResult = 6;
 
         // act
-        const actualResult = addUp(3);
+        const actualResult = addUpTo(3);
 
         // assert
         expect(actualResult).toEqual(expectedResult);
@@ -54,7 +54,7 @@ describe('addUp', () => {
         const expectedResult = 3;
 
         // act
-        const actualResult = addUp(2);
+        const actualResult = addUpTo(2);
 
         // assert
         expect(actualResult).toEqual(expectedResult);
@@ -66,7 +66,7 @@ describe('addUp', () => {
         const expectedResult = -1;
 
         // act
-        const actualResult = addUp(-1);
+        const actualResult = addUpTo(-1);
 
         // assert
         expect(actualResult).toEqual(expectedResult);
@@ -77,7 +77,7 @@ describe('addUp', () => {
         const expectedResult = -10;
 
         // act
-        const actualResult = addUp(-4);
+        const actualResult = addUpTo(-4);
 
         // assert
         expect(actualResult).toEqual(expectedResult);
@@ -88,7 +88,7 @@ describe('addUp', () => {
         const expectedResult = -3;
 
         // act
-        const actualResult = addUp(-2);
+        const actualResult = addUpTo(-2);
 
         // assert
         expect(actualResult).toEqual(expectedResult);
@@ -99,7 +99,7 @@ describe('addUp', () => {
         const expectedResult = 0;
 
         // act
-        const actualResult = addUp(0);
+        const actualResult = addUpTo(0);
 
         // assert
         expect(actualResult).toEqual(expectedResult);

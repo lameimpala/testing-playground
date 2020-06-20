@@ -28,7 +28,7 @@ describe('numberOfArgs', () => {
         const expectedResult = 2;
 
         // act
-        const actualResult = numberOfArgs('a', 'b');
+        const actualResult = numberOfArgs(null, null);
 
         // assert
         expect(actualResult).toEqual(expectedResult);
@@ -39,7 +39,7 @@ describe('numberOfArgs', () => {
         const expectedResult = 5;
 
         // act
-        const actualResult = numberOfArgs('a', 'b', 'c', 'd', 'e');
+        const actualResult = numberOfArgs('a', 'b', undefined, 'd', null);
 
         // assert
         expect(actualResult).toEqual(expectedResult);

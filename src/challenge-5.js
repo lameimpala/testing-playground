@@ -1,6 +1,6 @@
 
-/*************************
-    *** Coding Challenge 5
+/*
+    *** Challenge 5
         
         The Karaca's Encryption Algorithm - https://edabit.com/challenge/ccZBsRp6pX869gyqx    
     
@@ -30,18 +30,5 @@
 */
 
 export function encrypt(string) {
-    
-    let reversedString = string.split('').reverse().join('');
-        
-    reversedString = reversedString.replace(/a/g, '0').replace(/e/g, '1').replace(/o/g, '2').replace(/u/g, '3');
-
-    reversedString = reversedString + 'aca';
-        
-    return reversedString;
-    
+    throw new Error('Not Implemented');
 }
-
-console.log(encrypt('apple'));
-console.log(encrypt('karaca'));
-console.log(encrypt('burak'));
-console.log(encrypt('alpaca'));

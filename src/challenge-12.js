@@ -2,7 +2,6 @@
 
     Challenge:
         Write a function that takes any number of input parameters and returns the sum.
-        This function *must* use the reduce function, and that will be checked in a test.
         return 0 if no arguments are defined
 
     Examples:

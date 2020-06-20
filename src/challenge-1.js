@@ -1,17 +1,13 @@
-/*************************
-    *** Coding Challenge 1
-    
-        Given two variables, create a function that returns
-        the sum of two variables.
+/*
+    *** Challenge 1
+
+        Create a function that returns the sum of two variables.
         
         Examples:
-        function(1, 2)                  returns 3
-        function(126, 35)               returns 161
-
-        Notes:
-        None
+        sumOf(1, 2)                  returns 3
+        sumOf(126, 35)               returns 161
 */
 
 export function sumOf(a, b) {
-    return a + b;
+    throw new Error('Not Implemented');
 }

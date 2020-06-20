@@ -1,5 +1,5 @@
-/*************************
-    *** Coding Challenge 7
+/*
+    *** Challenge 7
 
         Write a function that adds up the numbers between 
         0 and the given number, including the given number.
@@ -14,38 +14,6 @@
             All inputs are numbers
 */
 
-export function addUp(number) {
-    const setLength = Math.abs(number);
-    
-    let setNumber = 0;
-    let sum = 0;
-
-    if (number > 0){
-        for(var i = 0; i <= setLength; i++){
-            sum = setNumber;
-   
-            setNumber = setNumber + number;
-                
-            number = number - 1;
-        }
-
-        return sum;
-
-    }else if (number < 0){
-        number = Math.abs(number);
-        for(var i = 0; i <= setLength; i++){
-            sum = setNumber;
-                        
-            setNumber = setNumber + number;
-                
-            number = number - 1;
-        }
-        
-        return sum * (-1); 
-    
-    } else {
-        return 0;
-    }
+export function addUpTo(number) {
+    throw new Error('Not Implemented');
 }
-
-console.log(addUp(-2));

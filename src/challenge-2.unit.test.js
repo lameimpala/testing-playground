@@ -16,4 +16,16 @@ describe('lastItemOf', () => {
         // assert
         expect(actualResult).toEqual(expectedResult);
     });
+
+    it('returns the last character in a string', () => {
+        // arrange
+        const expectedResult = 'd';
+        const arrayUnderTest = 'Hello World';
+
+        // act
+        const actualResult = lastItemOf(arrayUnderTest);
+
+        // assert
+        expect(actualResult).toEqual(expectedResult);
+    });
 });

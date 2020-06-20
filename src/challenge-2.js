@@ -1,16 +1,14 @@
-/*************************
-    *** Coding Challenge 2
+/*
+    *** Challenge 2
     
-        Given an array, create a function that returns only the
+        Create a function that returns only the
         last value in the array.
     
         Examples:
-            function('robocop');        returns 'p'
-            function('gadget');         returns 't'
+            lastItemOf('robocop');        returns 'p'
+            lastItemOf([0, 2, 6]);         returns 6
         
-        Notes:
-        None
 */
 export function lastItemOf(array) {
-    return array.pop();
+    throw new Error('Not Implemented');
 }
