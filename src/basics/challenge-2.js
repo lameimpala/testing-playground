@@ -2,7 +2,7 @@
     *** Challenge 2
     
         Create a function that returns only the
-        last value in the array.
+        last value in the array or string
     
         Examples:
             lastItemOf('robocop');        returns 'p'

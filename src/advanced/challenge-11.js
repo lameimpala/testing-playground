@@ -21,7 +21,6 @@
         objectHasKey({ grandparentKey: { parentKey: { childKey: 1 }}}, 'childKey') = true because 'childKey' does exist in the child of a child object
         objectHasKey({}, 'key') = false because there are no keys in the object
         objectHasKey({ a: 1}, 'b') = false because there is no 'b' key in the object
-
 */
 
 export function objectHasKey(inputObject = {}, keyToFind = '') {
