@@ -15,9 +15,7 @@ describe('encrypt', () => {
         // assert
         expect(actualResult).toEqual(expectedResult);
     });
-});
 
-describe('encrypt', () => {
     it('Encrypts a string that contains double vowels', () => {
         // arrange
         const expectedResult = '11rt1nipaca';
@@ -26,9 +24,7 @@ describe('encrypt', () => {
         // assert
         expect(actualResult).toEqual(expectedResult);
     });
-});
 
-describe('encrypt', () => {
     it('Encrypts a string that contains consecutive vowels', () => {
         // arrange
         const expectedResult = '13lbaca';
@@ -37,4 +33,4 @@ describe('encrypt', () => {
         // assert
         expect(actualResult).toEqual(expectedResult);
     });
-});
+}); 

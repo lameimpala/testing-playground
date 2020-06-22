@@ -16,9 +16,10 @@
             Whatever the onClick prop does is irrelevant.
             We are only concerned with attaching the prop to the button.
         
-        You will need to add the appropriate arguments to the function declaration below
 */
 
-export function Button() {
+import React from 'react';
+
+export function Button(props) {
     return null;
 }
