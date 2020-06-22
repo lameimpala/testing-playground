@@ -54,7 +54,6 @@
         Notes:
             Although it won't cause a syntax error, make sure that each <li> element has a unique "key" prop.
             The "list" prop will always be an array.
-            Nothing special needs to be done to handle an empty array
             You will need to add the appropriate arguments to the function declaration below
 */
 
