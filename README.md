@@ -11,3 +11,9 @@ In the project directory, to install dependencies, run
 In the project directory, you can run:
 
 `npm run test`
+
+or
+
+`npm run test -- test/basics/challenge-1`
+
+to run a single test suite
