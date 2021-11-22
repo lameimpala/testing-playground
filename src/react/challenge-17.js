@@ -18,25 +18,18 @@
             You only need to fetch data when the component first *mounts*
 */
 
-import React, { useEffect } from 'react';
-import axios from 'axios';
+import { useEffect } from "react";
+import axios from "axios";
 
 export function ColorOfTheDay() {
-    useEffect(() => {
-        // I get called once, when the component mounts
-    }, []);
+  useEffect(() => {
+    // I get called once, when the component mounts
+  }, []);
 
-
-    return (
-        <div>
-            <p>
-                Color of the Day:
-            </p>
-            <p>
-                color of the day goes here
-            </p>
-        </div>
-    );
-
-
+  return (
+    <div>
+      <p>Color of the Day:</p>
+      <p>color of the day goes here</p>
+    </div>
+  );
 }

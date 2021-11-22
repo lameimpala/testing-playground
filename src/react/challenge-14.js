@@ -18,8 +18,6 @@
         
 */
 
-import React from 'react';
-
 export function Button(props) {
-    return null;
+  return null;
 }

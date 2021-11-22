@@ -57,8 +57,6 @@
             You will need to add the appropriate arguments to the function declaration below
 */
 
-import React from 'react';
-
 export function List() {
-    return null;
+  return null;
 }

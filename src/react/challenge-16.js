@@ -8,14 +8,14 @@
 
 */
 
-import React from 'react';
-
 export function CounterButton() {
-    function incrementCounter() {
-        // do something here to increment the counter
-    }
+  function incrementCounter() {
+    // do something here to increment the counter
+  }
 
-    return (
-        <button onClick={incrementCounter}>Replace me with the value of the counter</button>
-    );
+  return (
+    <button onClick={incrementCounter}>
+      Replace me with the value of the counter
+    </button>
+  );
 }

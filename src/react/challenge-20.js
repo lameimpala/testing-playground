@@ -7,10 +7,8 @@
         Do not modify the existing loading spinner
 */
 
-import React from 'react';
-
 export function PostComponent() {
-    const loadingSpinner = <div data-testid="loading-spinner" />;
+  const loadingSpinner = <div data-testid="loading-spinner" />;
 
-    return null;
+  return null;
 }

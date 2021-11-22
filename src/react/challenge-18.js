@@ -14,39 +14,35 @@
         Multiple pieces of state may be necessary to complete this challenge.  
 */
 
-import React from 'react';
-
 export function Todos() {
-    // on the next line, I'm destruring the property I need out of the "event" object the function will be called with
-    function onChangeHandlerForInput( { target: { value } } ) {
-        // this is the current value of what is in the input element
-        console.log(value);
-    }
+  // on the next line, I'm destruring the property I need out of the "event" object the function will be called with
+  function onChangeHandlerForInput({ target: { value } }) {
+    // this is the current value of what is in the input element
+    console.log(value);
+  }
 
-    function onClickHandlerForButton() {
-        // here we can take the value of what is in the input piece of state, and add it to our todos list
-    }
+  function onClickHandlerForButton() {
+    // here we can take the value of what is in the input piece of state, and add it to our todos list
+  }
 
-    return (
-        <div>
-            <ul>
-                {
-                    /* 
+  return (
+    <div>
+      <ul>
+        {/* 
                         Todos go here
-                    */
-                } 
-            </ul>
-            <p>
-                <label htmlFor="new-todo-item">New Todo:</label>
-                <input onChange={onChangeHandlerForInput} id="new-todo-item" type="text" />
-            </p> 
-            <p>
-                <button onClick={onClickHandlerForButton}>
-                    Add Todo
-                </button>
-            </p>
-        </div>
-    );
-
-
+                    */}
+      </ul>
+      <p>
+        <label htmlFor="new-todo-item">New Todo:</label>
+        <input
+          onChange={onChangeHandlerForInput}
+          id="new-todo-item"
+          type="text"
+        />
+      </p>
+      <p>
+        <button onClick={onClickHandlerForButton}>Add Todo</button>
+      </p>
+    </div>
+  );
 }
