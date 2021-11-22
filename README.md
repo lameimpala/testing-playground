@@ -14,7 +14,7 @@ In the project directory, you can run:
 
 or
 
-`npm run test -- src/basics/challenge-1`
+`npm run test -- challenge-1`
 
 to run a single test suite
 
@@ -22,4 +22,4 @@ to run a single test suite
 
 If you are viewing this repo as part of an interview, the objective is to complete as many of the challenges here as possible. Many solutions are possible with one line and are relatively simple. Feel free to add additional tests or adjust the environment at your leisure.
 
-Commit all changes to master, and push your changes. I will be able to view the diff and provide any feedback if necessary. Feel free to post questions on the feedback pull request, and I'll get back to you soon.
+Commit all changes to master, and push your changes. We'll be able to view the diff and provide any feedback if necessary. Feel free to post questions on the feedback pull request, and we'll get back to you soon.
