@@ -14,8 +14,6 @@
         Multiple pieces of state may be necessary to complete this challenge.  
 */
 
-import { ChangeEvent } from "react";
-
 export function Todos() {
   // on the next line, I'm destruring the property I need out of the "event" object the function will be called with
   function onChangeHandlerForInput(event: any) {
