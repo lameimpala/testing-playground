@@ -1,5 +1,5 @@
 // react testing utils
-import { render } from "@testing-library/react";
+import { render, screen } from "@testing-library/react";
 import userEvent from "@testing-library/user-event";
 
 // Component we're testing
@@ -11,8 +11,8 @@ describe("Button Component", () => {
     const onClick = jest.fn();
 
     // act
-    const { queryByText } = render(<Button onClick={onClick} />);
-    userEvent.click(queryByText("Click Me"));
+    render(<Button onClick={onClick} />);
+    userEvent.click(screen.getByText("Click Me"));
 
     // assert
     expect(onClick).toHaveBeenCalled();

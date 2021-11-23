@@ -1,4 +1,3 @@
-
 /*
     *** Challenge 4
     
@@ -11,8 +10,6 @@
             reverseCase('siZZle') === 'SIzzLE';
 */
 
-
-export function reverseCase(string) {
-    throw new Error('Not Implemented');
+export function reverseCase(string: string) {
+  throw new Error("Not Implemented");
 }
-

@@ -26,6 +26,10 @@
         }) returns "Tokyo has a population of 13,929,286 and is situated in Asia"
 */
 
-export function printCityFacts(city) {
-    throw new Error('Not Implemented');
+export function printCityFacts(city: {
+  name: string;
+  population: string;
+  continent: string;
+}) {
+  throw new Error("Not Implemented");
 }

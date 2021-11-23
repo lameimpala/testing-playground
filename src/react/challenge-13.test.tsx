@@ -1,5 +1,5 @@
 // react testing utils
-import { render } from "@testing-library/react";
+import { render, screen } from "@testing-library/react";
 import "@testing-library/jest-dom/extend-expect";
 
 // Component we're testing
@@ -11,10 +11,10 @@ describe("The Name Component", () => {
     const name = "Reid";
 
     // act
-    const { queryByText } = render(<Name name={name} />);
+    render(<Name name={name} />);
 
     // assert
-    expect(queryByText(name)).toBeInTheDocument();
+    expect(screen.queryByText(name)).toBeInTheDocument();
   });
 
   it("should show Tim", () => {
@@ -22,18 +22,18 @@ describe("The Name Component", () => {
     const name = "Tim";
 
     // act
-    const { queryByText } = render(<Name name={name} />);
+    render(<Name name={name} />);
 
     // assert
-    expect(queryByText(name)).toBeInTheDocument();
+    expect(screen.queryByText(name)).toBeInTheDocument();
   });
 
   it('should show "No name specified" when there is no name', () => {
     // arrange
     // act
-    const { queryByText } = render(<Name />);
+    render(<Name />);
 
     // assert
-    expect(queryByText("No name specified")).toBeInTheDocument();
+    expect(screen.queryByText("No name specified")).toBeInTheDocument();
   });
 });

@@ -1,4 +1,3 @@
-
 /*
     *** Challenge 5
         
@@ -29,6 +28,6 @@
             All lower-cased letters should be upper-cased, and vice versa.            
 */
 
-export function encrypt(string) {
-    throw new Error('Not Implemented');
+export function encrypt(string: string) {
+  throw new Error("Not Implemented");
 }

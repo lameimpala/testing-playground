@@ -15,7 +15,7 @@ export function CounterButton() {
 
   return (
     <button onClick={incrementCounter}>
-      Replace me with the value of the counter
+      {/* Replace me with the value of the counter */}
     </button>
   );
 }

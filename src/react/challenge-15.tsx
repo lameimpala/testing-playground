@@ -57,6 +57,6 @@
             You will need to add the appropriate arguments to the function declaration below
 */
 
-export function List() {
+export function List(props: { list: string[] }) {
   return null;
 }

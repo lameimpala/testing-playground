@@ -8,6 +8,6 @@
         sumOf(126, 35)               returns 161
 */
 
-export function sumOf(a, b) {
-    throw new Error('Not Implemented');
+export function sumOf(a: number, b: number) {
+  throw new Error("Not Implemented");
 }

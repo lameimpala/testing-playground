@@ -7,6 +7,6 @@
             isDivisibleBy5(5);    true
             isDivisbleBy5(12);   false
 */
-export function isDivisibleBy5(number) {
-    throw new Error('Not Implemented');
+export function isDivisibleBy5(number: number) {
+  throw new Error("Not Implemented");
 }

@@ -18,6 +18,6 @@
         
 */
 
-export function Button(props) {
+export function Button(props: { onClick: Function }) {
   return null;
 }

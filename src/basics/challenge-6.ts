@@ -9,6 +9,6 @@
 
 */
 
-export function getKeysValueFromObject(key, object) {
-    throw new Error('Not Implemented');
+export function getKeysValueFromObject(key: string, object: Object) {
+  throw new Error("Not Implemented");
 }

@@ -1,5 +1,5 @@
 import axios from "axios";
-import { render, fireEvent, waitForElement } from "@testing-library/react";
+import { render, screen } from "@testing-library/react";
 import "@testing-library/jest-dom/extend-expect";
 
 import { ColorOfTheDay } from "./challenge-17";
@@ -10,13 +10,12 @@ describe("ComponentThatFetchesData", () => {
   it("should show the color of the day", async () => {
     // arrange
     const colorOfTheDay = "Burnt Sienna";
-    axios.get.mockResolvedValue({ data: { colorOfTheDay } });
+    (axios.get as any).mockResolvedValue({ data: { colorOfTheDay } });
 
     // act
-    const { queryByText, getByText } = render(<ColorOfTheDay />);
-    await waitForElement(() => getByText(colorOfTheDay));
+    render(<ColorOfTheDay />);
 
     // assert
-    expect(queryByText(colorOfTheDay)).toBeInTheDocument();
+    expect(await screen.findByText(colorOfTheDay)).toBeInTheDocument();
   });
 });

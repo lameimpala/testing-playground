@@ -14,11 +14,13 @@
         Multiple pieces of state may be necessary to complete this challenge.  
 */
 
+import { ChangeEvent } from "react";
+
 export function Todos() {
   // on the next line, I'm destruring the property I need out of the "event" object the function will be called with
-  function onChangeHandlerForInput({ target: { value } }) {
+  function onChangeHandlerForInput(event: any) {
     // this is the current value of what is in the input element
-    console.log(value);
+    console.log(event.target.value);
   }
 
   function onClickHandlerForButton() {

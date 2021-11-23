@@ -14,6 +14,6 @@
             All inputs are numbers
 */
 
-export function addUpTo(number) {
-    throw new Error('Not Implemented');
+export function addUpTo(number: number) {
+  throw new Error("Not Implemented");
 }

@@ -29,7 +29,7 @@ export function ColorOfTheDay() {
   return (
     <div>
       <p>Color of the Day:</p>
-      <p>color of the day goes here</p>
+      <p>{/* color of the day goes here */}</p>
     </div>
   );
 }

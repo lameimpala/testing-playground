@@ -9,6 +9,6 @@
             lastItemOf([0, 2, 6]);         returns 6
         
 */
-export function lastItemOf(array) {
-    throw new Error('Not Implemented');
+export function lastItemOf(array: [any]) {
+  throw new Error("Not Implemented");
 }

@@ -23,6 +23,6 @@
         objectHasKey({ a: 1}, 'b') = false because there is no 'b' key in the object
 */
 
-export function objectHasKey(inputObject = {}, keyToFind = '') {
-    throw new Error('Not Implemented');
+export function objectHasKey(inputObject: Object = {}, keyToFind: string = "") {
+  throw new Error("Not Implemented");
 }

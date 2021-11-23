@@ -13,6 +13,6 @@
             Nothing special needs to be done to render a string, simply return it
 */
 
-export function Name(props) {
+export function Name(props: { name: any }) {
   return null;
 }
